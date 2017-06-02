@@ -6,7 +6,7 @@
 	<meta name="autor" content="Francisco Acosta">
 	<meta name="description" content="Fotografias de paisajes y retratos">
     <title>Comenzando con la fotografia</title>
-    <link rel="stylesheet" href="./Css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
 	<style type="text/css">
 		.home{
@@ -15,57 +15,54 @@
 	</style>
   </head>
   <body>
-	<div class="contenido">
-		<header class="cabecera">
-			<h1 class="titulo">Comenzando con la fotografia</h1>
+		<div class="wrapper">
+			<header class="cabecera">
+				<div id="titulo">
+					<h1 class="titulo">Comenzando con la fotografia</h1>
+				</div>
+			</header>
 			<nav class="menu">
 				<a href="index.html" class="home" >Inicio</a>
 				<a href="paisaje.html" class="landscape">Paisajes</a>
 				<a href="retratos.html" class="portrait">Retratos</a>	
-			</nav>
-		</header>
-		<section class="container">
-			<section id="superior">
-				<div class="fotocentral">
-				<img src="images/home.jpg" class="foto_home" alt="Fotografia Next U" width="700px">
-				</div>
-			</section>
-			<section id="zonamedia">
-				<div class="fotos_medias">
-					<div class="fotos1">		  
-						<a href="paisaje.html"><img src="images/paisaje/paisaje.jpeg" class="foto_paisaje" alt="Fotografia de paisajes"></a>	  
+			</nav>			
+			<section class="container">
+				<article id="foto1">
+					<figure><img src="images/home.jpg" class="foto_home" alt="Fotografia Next U" width="80%"></figure>
+				</article>
+					<article id="foto2">
+						<a href="paisaje.html"> <figure> <img src="images/paisaje/paisaje.jpeg" class="foto_paisaje" alt="Fotografia de paisajes" width="90%"></figure></a>	  
 						<h3>Paisajes</h3>
-					</div>
-					<div class="fotos2">
-						<a href="retratos.html"><img src="images/retrato/retrato.jpg" class="foto_retrato" alt="Fotografia de paisajes"></a>
+					</article>						
+					<article id="foto3">
+						<a href="retratos.html"><figure><img src="images/retrato/retrato.jpg" class="foto_retrato" alt="Fotografia de paisajes" width="90%"></figure></a>
 						<h3>Retratos</h3>
-					</div>
-				</div>
+					</article>				
 			</section>
-		</section>
-		<footer>
-			<div class="pie">
-				<div class="bloque1">
-					<h3>Contacto:</h3>
-					 <p>francisco@acostaavilafotografia.com</p>	<br>			
+			<footer>
+				<div class="pie">
+					<article class="bloque1">
+						<h3>Contacto:</h3>
+						<p>francisco@aavilafotografia.com</p>	<br>			
 						<p>+57.322.368.0710</p><br>
 						<p>Calle 78 #12-29,Bogota</p>
-					
-				</div>
-				<div  class="bloque2">
-					<h3>Redes Sociales</h3>
+					</article>
+					<article  class="bloque2">
+						<h3>Redes Sociales</h3>
 						<p>Instagram: @acostaavilafotografia</p><br>				
 						<p>Facebook: @acostaavilafotografia</p><br>				
 						<p>twitter: @acostaavilafoto</p>
-				</div >
-				<div class="bloque3">
-					<p>Politica de privacidad: los datos suministrados por usted no seran almacenados o vendidos a terceros.</p>
+					</article>
+					<article class="bloque3">
+						<h3>Politica de privacidad</h3> 
+						<p>los datos suministrados por usted <br>no seran almacenados o<br> vendidos a terceros.</p>
+					</article>
+					<article class="bloque4">
+						<h3>Copyright© 2017</h3> 
+						<p>Acosta Avila Fotografia</p>
+					</article>			
 				</div>
-				<div class="bloque4">
-					<p>Copyright© 2017, Acosta Avila Fotografia</p>
-				</div>			
-			</div>
-		</footer>
-	</div>
+			</footer>
+		</div>
   </body>
 </html>
