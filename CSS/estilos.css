@@ -7,16 +7,27 @@
 	width:900px;
 	margin: 0 auto;
 }
-.Header_Nav{
-	background-color:#5b7989;
-}
 header{
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
 	margin: 0 auto;
-	height:5em;
+	height:6em;
 	padding:1% 1% 1% 1%;
 	background-color:#5b7989;
 	border-radius: 10px 10px 0px 0px;
-	text-align:center;
+}
+.menu{
+	width:20%;
+	text-align:left;
+	float:left;
+	padding-top:4%;
+}
+#titulo{
+	width:80%;
+	text-align:right;
+	float:right
 }
 #titulo h1{
 	color:white;
@@ -24,13 +35,6 @@ header{
 	text-align:left;
 	float:left;
 	width:100%
-}
-nav{
-	width:100%;
-	background-color:#5b7989;
-	float:right;
-	text-align:right;
-	height:2em;
 }
 a{
 	color:white;
@@ -97,8 +101,7 @@ img{
 				bottom:0px;
 				left: 0px;
 				}
-	}
-			
+	}		
 #retra:hover{
 					animation-name: imagen2-animacion;
 					animation-duration: 1s;
@@ -194,7 +197,6 @@ footer{
 	-webkit-filter:sepia(90%); /*chrome, safari, opera*/
 	filter:sepia(90%);
 }
-
 .retratos{
 	display: -webkit-flex;
     display: flex;
@@ -262,13 +264,39 @@ footer{
 }
 @media screen and (max-width:899px){
 	.wrapper{
-		font-size:0.7em;
+		font-size:0.8em;
 		width:100%;
 		margin: 0 auto;
+	}
+	header{
+		width:100%
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: wrap;
+		flex-flow: column wrap;
+	}
+	#titulo h1{
+		width:100%;
+		order:1;
+		margin: 0 auto;
+		text-align:center;
+		float:center;
+	}
+	.menu{
+		width:100%;
+		text-align:center;
+		order:2;
 	}
 	#foto1{
 		width:100%;
 		order:1;
+	}
+	.fotosPyP{
+		width:100%
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: wrap;
+		flex-flow: column wrap;
 	}
 	#foto2{
 		width:100%;
@@ -318,6 +346,7 @@ footer{
     flex-wrap: wrap;
 	margin:0 auto;
 	text-align:center;
+	padding-top:2%;
 	}
 	.p1{
 		width:100%;
@@ -362,7 +391,8 @@ footer{
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 	margin:0 auto;
-	text-align:center:
+	text-align:center;
+	padding-top:2%;
 	}
 	.r1{
 		width:100%;
